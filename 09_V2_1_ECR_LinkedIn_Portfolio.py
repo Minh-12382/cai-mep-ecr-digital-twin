@@ -21,24 +21,29 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 
 ROOT=Path(__file__).resolve().parent
-P={
- 'road':ROOT/'output_step02_road_network'/'03_ECR_Road_Routes_Detail.csv',
- 'cost':ROOT/'output_step03_road_transport_cost'/'02_ECR_Road_Transport_Cost_Detail.csv',
- 'ops':ROOT/'output_step05_operational_dataset_V2'/'01_ECR_Operational_Dataset_90Days_V2.csv',
- 'ops_summary':ROOT/'output_step05_operational_dataset_V2'/'02_ECR_Depot_Type_Summary_V2.csv',
- 'movements':ROOT/'output_step06_MILP'/'01_ECR_Optimized_Movements.csv',
- 'inventory':ROOT/'output_step06_MILP'/'02_ECR_Optimized_Inventory.csv',
- 'kpi':ROOT/'output_step06_MILP'/'03_ECR_Optimization_KPI.csv',
- 'routes':ROOT/'output_step06_MILP'/'04_ECR_Route_Summary.csv',
- 'daily_kpi':ROOT/'output_step06_MILP'/'05_ECR_Daily_KPI.csv',
- 'sensitivity':ROOT/'output_step07_sensitivity_analysis'/'01_ECR_Sensitivity_Summary.csv',
- 'public':ROOT/'output_step08_reality_calibration_V2'/'01_ECR_V2_Public_Reference_Data.csv',
- 'assumptions':ROOT/'output_step08_reality_calibration_V2'/'02_ECR_V2_Calibration_Assumptions.csv',
- 'macro_summary':ROOT/'output_step08_reality_calibration_V2'/'04_ECR_V2_Network_Summary.csv',
- 'macro_depots':ROOT/'output_step08_reality_calibration_V2'/'05_ECR_V2_Depot_Type_Summary.csv',
+
+P = {
+    'road': ROOT / '03_ECR_Road_Routes_Detail.csv',
+    'cost': ROOT / '02_ECR_Road_Transport_Cost_Detail.csv',
+
+    'ops': ROOT / '01_ECR_Operational_Dataset_90Days_V2.csv',
+    'ops_summary': ROOT / '02_ECR_Depot_Type_Summary_V2.csv',
+
+    'movements': ROOT / '01_ECR_Optimized_Movements.csv',
+    'inventory': ROOT / '02_ECR_Optimized_Inventory.csv',
+    'kpi': ROOT / '03_ECR_Optimization_KPI.csv',
+    'routes': ROOT / '04_ECR_Route_Summary.csv',
+    'daily_kpi': ROOT / '05_ECR_Daily_KPI.csv',
+
+    'sensitivity': ROOT / '01_ECR_Sensitivity_Summary.csv',
+
+    'public': ROOT / '01_ECR_V2_Public_Reference_Data.csv',
+    'assumptions': ROOT / '02_ECR_V2_Calibration_Assumptions.csv',
+    'macro_summary': ROOT / '04_ECR_V2_Network_Summary.csv',
+    'macro_depots': ROOT / '05_ECR_V2_Depot_Type_Summary.csv',
 }
-for scenario in ('LOW','BASE','HIGH'):
- P['macro_'+scenario]=ROOT/'output_step08_reality_calibration_V2'/f'03_ECR_Reality_Calibrated_V2_{scenario}.csv'
+for scenario in ('LOW', 'BASE', 'HIGH'):
+    P[f'macro_{scenario}'] = ROOT / f'03_ECR_Reality_Calibrated_V2_{scenario}.csv'
 
 TERMINALS=[('T01_CMIT','CMIT','Cai Mep International Terminal',10.513779,107.019311,1100000),('T02_TCIT','TCIT','Tan Cang Cai Mep International Terminal',10.534163,107.034460,2248119),('T03_SSIT','SSIT','SP-SSA International Terminal',10.504844,107.010502,1000000)]
 DEPOTS=[('D01_PHU_MY','D01','MEDLOG Phu My ICD',10.533846,107.054027,.35),('D02_CAI_MEP','D02','Logistics Cai Mep / ICD Cai Mep',10.555195,107.046862,.35),('D03_LONG_SON','D03','LSIP / Long Son International Port',10.471805,107.054136,.30)]
