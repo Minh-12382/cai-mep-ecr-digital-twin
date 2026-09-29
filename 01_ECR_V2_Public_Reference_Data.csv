@@ -1,0 +1,6 @@
+﻿Entity,Metric,Value,Unit,Data_Class,Note
+CMIT,2025 throughput first 11 months,2000000,TEU,PUBLIC_REAL_APPROX,Includes mother vessel + barge/feeder handling
+CMIT,2025 mother-vessel throughput first 11 months,1100000,TEU,PUBLIC_REAL_APPROX,Used as safer scale reference
+TCIT,2025 annual throughput,2248119,TEU/year,PUBLIC_REAL,Official TCIT milestone
+SSIT,2025 annual throughput,1000000,TEU/year,PUBLIC_REAL_APPROX,Official SSIT: nearly 1 million TEU
+SSIT,Designed handling capacity,1200000,TEU/year,PUBLIC_REAL,Official SSIT

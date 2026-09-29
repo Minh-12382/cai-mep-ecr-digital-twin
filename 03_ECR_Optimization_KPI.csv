@@ -1,0 +1,2 @@
+﻿Baseline_Shortage,Optimized_Shortage,Shortage_Reduction,Shortage_Reduction_pct,Containers_Repositioned,ECR_Transport_Cost_VND,MILP_Objective_VND,Inventory_Balance_Errors,Solver_Status,Model_Version,Road_Assumption,Transfer_Assumption,Operational_Data
+1113,0,1113,100.0,1113,1838043400.0,2236088400.0,0,Optimal,ECR_MILP_V1,SYMMETRIC_ROAD_COST_V1,SAME_DAY_TRANSFER_V1,SYNTHETIC_SPATIAL_IMBALANCE_V2

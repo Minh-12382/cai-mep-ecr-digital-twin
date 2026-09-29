@@ -1,0 +1,4 @@
+﻿Scenario,Reference_TEU_Year,Relevant_Empty_Ratio,Total_Return_90d,Total_Demand_90d,Baseline_Shortage_90d,Avg_Return_per_Day,Avg_Demand_per_Day
+LOW,4348119,0.08,55213,53611,2899,613.48,595.68
+BASE,4348119,0.12,82807,80440,4368,920.08,893.78
+HIGH,4348119,0.16,110386,107214,5811,1226.51,1191.27
